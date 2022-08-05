@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-schulte-grid/static/css/main.1126f71b.css",
-    "main.js": "/react-schulte-grid/static/js/main.3f332748.js",
+    "main.css": "/react-schulte-grid/static/css/main.c5f929e2.css",
+    "main.js": "/react-schulte-grid/static/js/main.2829cb5f.js",
     "static/js/787.42c2485b.chunk.js": "/react-schulte-grid/static/js/787.42c2485b.chunk.js",
     "index.html": "/react-schulte-grid/index.html",
-    "main.1126f71b.css.map": "/react-schulte-grid/static/css/main.1126f71b.css.map",
-    "main.3f332748.js.map": "/react-schulte-grid/static/js/main.3f332748.js.map",
+    "main.c5f929e2.css.map": "/react-schulte-grid/static/css/main.c5f929e2.css.map",
+    "main.2829cb5f.js.map": "/react-schulte-grid/static/js/main.2829cb5f.js.map",
     "787.42c2485b.chunk.js.map": "/react-schulte-grid/static/js/787.42c2485b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1126f71b.css",
-    "static/js/main.3f332748.js"
+    "static/css/main.c5f929e2.css",
+    "static/js/main.2829cb5f.js"
   ]
 }
