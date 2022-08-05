@@ -97,7 +97,7 @@ export default function App() {
         <div
           className={"grid-list"}
           style={{
-            width: 100 * Math.pow(DEFAULT_GRID_AMOUNT, 0.5),
+            maxWidth: 100 * Math.pow(DEFAULT_GRID_AMOUNT, 0.5),
           }}
         >
           {gridListData.map((g) => (
