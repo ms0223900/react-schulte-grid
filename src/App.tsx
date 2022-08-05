@@ -82,9 +82,16 @@ export default function App() {
   return (
     <main className={"app"}>
       <div className={"top-part"}>
-        <h2>舒爾特方格</h2>
-        <div>
-          <h3>
+        <div className={"descp"}>
+          <h2>舒爾特方格</h2>
+          <p>
+            {
+              "訓練專注力的小遊戲，按下1就直接開始計時囉！\n從1依序點擊至最後一個數字，不會提示下一個數字（依靠記憶力）。\n如果忘記點到哪，就從頭開始吧"
+            }
+          </p>
+        </div>
+        <div style={{ display: "flex", justifyContent: "center", gap: "1rem" }}>
+          <h3 className={"passed-time"}>
             Time: <span>{handledTime}</span>
           </h3>
           <button className={"restart-btn"} onClick={handleRestart}>
@@ -105,7 +112,7 @@ export default function App() {
           ))}
         </div>
         <div>
-          <h4>秒數紀錄</h4>
+          <h4>秒數紀錄暫存</h4>
           <ul>
             {recordTimeListData.map((r, i) => (
               <li key={i}>{r}</li>

@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
 }
 
 ul li,
@@ -9,18 +10,34 @@ ol li {
   /* padding-inline-start: 1rem; */
   /* padding-left: 1rem; */
   margin-left: 1rem;
+  text-align: left;
 }
 
 .app {
   font-family: sans-serif;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 
   .top-part {
     text-align: center;
     padding: 1rem 0;
 
+    .descp {
+      padding-bottom: 2rem;
+
+      > p {
+        white-space: pre-wrap;
+      }
+    }
+
     h3 {
-      padding-bottom: 1rem;
+      // padding-bottom: 1rem;
+    }
+
+    .passed-time {
+      font-size: 30px;
     }
 
     .restart-btn {
@@ -31,31 +48,35 @@ ol li {
   .main-part {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     padding: 1rem;
+    height: 100%;
     gap: 1rem;
-  }
-
-  .grid-list {
-    display: flex;
-    flex-wrap: wrap;
-    flex-shrink: 0;
-    width: 100%;
-  }
-
-  .grid-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #aaa;
-    width: 100px;
-    height: 100px;
-    font-size: 30px;
-    user-select: none;
-  }
-
-  .grid-item:hover {
     background-color: #eee;
-    cursor: pointer;
+
+    .grid-list {
+      display: flex;
+      flex-wrap: wrap;
+      flex-shrink: 0;
+      width: 100%;
+      background-color: #fff;
+    }
+
+    .grid-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #aaa;
+      width: 100px;
+      height: 100px;
+      font-size: 30px;
+      user-select: none;
+    }
+
+    .grid-item:hover {
+      background-color: #eee;
+      cursor: pointer;
+    }
   }
 
   @media (max-width: 768px) {
